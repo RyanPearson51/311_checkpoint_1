@@ -13,7 +13,7 @@ let pool = mysql.createPool({
 function listUsers(req, res){
     console.log('controller.users.list', req.params)
     //select all users from Worker 
-    pool.query('SELECT * FROM Worker', function(err, rows){
+    pool.query('SELECT FIRST_NAME, DEPARTMENT FROM Worker', function(err, rows){
         if(err){
             return res.json({
                 'error': true, 
