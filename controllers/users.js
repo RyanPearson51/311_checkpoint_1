@@ -1,14 +1,7 @@
 const mysql = require('mysql');
+const pool = require('../sql/connection')
 
 
-let pool = mysql.createPool({
-    connectionLimit: 100,
-    host: 'sql3.freesqldatabase.com',
-    user: 'sql3436006',
-    password: 'IvH8AQEy4l',
-    database: 'sql3436006',
-    debug: false
-  });
 
 function listUsers(req, res){
     console.log('controller.users.list', req.params)

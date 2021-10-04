@@ -1,5 +1,5 @@
 -- table initialization, taken from example I was using for more practice online
--- came with additional tables to practice but this is the only one used for this project
+-- came with additional tables for joins but this is the only one used for this project
 
 
 CREATE TABLE Worker (
